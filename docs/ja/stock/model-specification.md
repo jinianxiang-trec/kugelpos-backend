@@ -1,3 +1,9 @@
+---
+title: "モデル仕様"
+parent: "Stock サービス"
+grand_parent: "日本語"
+nav_order: 2
+---
 # 在庫サービス モデル仕様
 
 ## 概要

@@ -1,3 +1,9 @@
+---
+title: "API仕様"
+parent: "Account サービス"
+grand_parent: "日本語"
+nav_order: 1
+---
 # アカウントサービス API仕様書
 
 ## 概要

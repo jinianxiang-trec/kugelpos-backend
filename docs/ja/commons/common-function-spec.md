@@ -1,3 +1,9 @@
+---
+title: "共通機能仕様"
+parent: "共通機能"
+grand_parent: "日本語"
+nav_order: 1
+---
 # Kugel Commons 共通機能仕様書
 
 ## 概要

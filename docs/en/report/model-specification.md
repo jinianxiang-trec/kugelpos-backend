@@ -1,3 +1,9 @@
+---
+title: "Model Specification"
+parent: "Report Service"
+grand_parent: "English"
+nav_order: 2
+---
 # Report Service Model Specification
 
 ## Overview

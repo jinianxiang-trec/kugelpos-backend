@@ -1,3 +1,9 @@
+---
+title: "Design Patterns"
+parent: "General"
+grand_parent: "English"
+nav_order: 4
+---
 # Kugelpos Design Patterns Specification
 
 ## Overview

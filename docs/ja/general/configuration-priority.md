@@ -1,3 +1,9 @@
+---
+title: "設定優先順位"
+parent: "一般ドキュメント"
+grand_parent: "日本語"
+nav_order: 2
+---
 # Kugelpos 設定優先順位仕様
 
 ## 概要

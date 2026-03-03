@@ -1,3 +1,9 @@
+---
+title: "WebSocket Specification"
+parent: "Stock Service"
+grand_parent: "English"
+nav_order: 4
+---
 # Stock Service WebSocket Specification
 
 ## Overview

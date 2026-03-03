@@ -1,3 +1,9 @@
+---
+title: "API Specification"
+parent: "Master Data Service"
+grand_parent: "English"
+nav_order: 1
+---
 # Master Data Service API Specification
 
 ## Overview

@@ -1,3 +1,9 @@
+---
+title: "Model Specification"
+parent: "Stock Service"
+grand_parent: "English"
+nav_order: 2
+---
 # Stock Service Model Specification
 
 ## Overview

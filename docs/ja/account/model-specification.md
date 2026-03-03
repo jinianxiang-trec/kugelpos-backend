@@ -1,3 +1,9 @@
+---
+title: "モデル仕様"
+parent: "Account サービス"
+grand_parent: "日本語"
+nav_order: 2
+---
 # Account Service モデル仕様書
 
 ## 概要

@@ -1,3 +1,9 @@
+---
+title: "Configuration Priority"
+parent: "General"
+grand_parent: "English"
+nav_order: 2
+---
 # Kugelpos Configuration Priority Specification
 
 ## Overview

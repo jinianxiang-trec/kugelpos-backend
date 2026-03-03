@@ -1,3 +1,9 @@
+---
+title: "HTTP通信仕様"
+parent: "一般ドキュメント"
+grand_parent: "日本語"
+nav_order: 6
+---
 # Kugelpos HTTP通信仕様
 
 ## 概要

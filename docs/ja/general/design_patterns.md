@@ -1,3 +1,9 @@
+---
+title: "デザインパターン"
+parent: "一般ドキュメント"
+grand_parent: "日本語"
+nav_order: 4
+---
 # Kugelpos デザインパターン仕様
 
 ## 概要

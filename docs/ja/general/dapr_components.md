@@ -1,3 +1,9 @@
+---
+title: "Daprコンポーネント"
+parent: "一般ドキュメント"
+grand_parent: "日本語"
+nav_order: 3
+---
 # Kugelpos Daprコンポーネント仕様
 
 ## 概要

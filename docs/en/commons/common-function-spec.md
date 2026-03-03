@@ -1,3 +1,9 @@
+---
+title: "Common Functions"
+parent: "Commons"
+grand_parent: "English"
+nav_order: 1
+---
 # Kugel Commons Common Function Specification
 
 ## Overview

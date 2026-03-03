@@ -1,3 +1,9 @@
+---
+title: "アーキテクチャ"
+parent: "一般ドキュメント"
+grand_parent: "日本語"
+nav_order: 1
+---
 # Kugelpos システムアーキテクチャ
 
 ## 概要

@@ -1,0 +1,23 @@
+title: Kugelpos Documentation
+description: Documentation for the Kugelpos POS Backend System
+remote_theme: just-the-docs/just-the-docs@v0.10.1
+
+# Exclude files that should not be processed by Jekyll
+exclude:
+  - openapi/
+  - diagrams/*.puml
+  - Gemfile
+  - Gemfile.lock
+
+# Default front matter values
+defaults:
+  - scope:
+      path: "en"
+    values:
+      layout: default
+      lang: en
+  - scope:
+      path: "ja"
+    values:
+      layout: default
+      lang: ja

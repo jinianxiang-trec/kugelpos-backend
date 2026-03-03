@@ -1,3 +1,9 @@
+---
+title: "日本語"
+nav_order: 2
+has_children: true
+permalink: "/ja/"
+---
 # Kugelpos ドキュメント一覧
 
 Kugelpos POSシステムの日本語ドキュメント一覧です。各カテゴリごとに整理されています。

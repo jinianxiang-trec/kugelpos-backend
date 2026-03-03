@@ -1,3 +1,9 @@
+---
+title: "エラーコード仕様"
+parent: "一般ドキュメント"
+grand_parent: "日本語"
+nav_order: 5
+---
 # Kugelpos エラーコード仕様
 
 ## 概要

@@ -1,3 +1,9 @@
+---
+title: "HTTP Communication"
+parent: "General"
+grand_parent: "English"
+nav_order: 6
+---
 # Kugelpos HTTP Communication Specification
 
 ## Overview

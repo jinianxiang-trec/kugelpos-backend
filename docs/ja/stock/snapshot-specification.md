@@ -1,3 +1,9 @@
+---
+title: "スナップショット仕様"
+parent: "Stock サービス"
+grand_parent: "日本語"
+nav_order: 3
+---
 # 在庫サービス スナップショット仕様
 
 ## 概要

@@ -1,3 +1,9 @@
+---
+title: "API Specification"
+parent: "Terminal Service"
+grand_parent: "English"
+nav_order: 1
+---
 # Terminal Service API Specification
 
 ## Overview

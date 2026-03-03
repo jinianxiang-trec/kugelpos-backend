@@ -1,3 +1,9 @@
+---
+title: "モデル仕様"
+parent: "Master Data サービス"
+grand_parent: "日本語"
+nav_order: 2
+---
 # マスターデータサービス モデル仕様
 
 ## 概要

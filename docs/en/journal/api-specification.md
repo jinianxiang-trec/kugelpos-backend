@@ -1,3 +1,9 @@
+---
+title: "API Specification"
+parent: "Journal Service"
+grand_parent: "English"
+nav_order: 1
+---
 # Journal Service API Specification
 
 ## Overview
