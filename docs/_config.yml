@@ -2,6 +2,12 @@ title: Kugelpos Documentation
 description: Documentation for the Kugelpos POS Backend System
 remote_theme: just-the-docs/just-the-docs@v0.10.1
 
+# GitHub repository info
+github_repo: jinianxiang-trec/kugelpos-backend
+
+# Docs ZIP download URL (auto-published by GitHub Actions to docs-latest release)
+docs_zip_url: https://github.com/jinianxiang-trec/kugelpos-backend/releases/download/docs-latest/documentation.zip
+
 # Exclude files that should not be processed by Jekyll
 exclude:
   - openapi/

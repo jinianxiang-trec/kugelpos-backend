@@ -1,0 +1,50 @@
+<div class="nav-footer-download">
+  <a href="{{ site.docs_zip_url }}" class="btn btn-outline download-btn" download>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round"
+         stroke-linejoin="round" class="download-icon">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <polyline points="7 10 12 15 17 10"/>
+      <line x1="12" y1="15" x2="12" y2="3"/>
+    </svg>
+    Download Docs (.zip)
+  </a>
+</div>
+
+<style>
+  .nav-footer-download {
+    padding: 1rem var(--nav-list-item-padding-horizontal, 1rem);
+    border-top: 1px solid var(--border-color, #e1e4e8);
+    margin-top: 0.5rem;
+  }
+
+  .download-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: var(--nav-list-link-font-size, 0.875rem);
+    font-weight: 500;
+    color: var(--link-color, #0969da);
+    text-decoration: none;
+    border: 1px solid var(--border-color, #d0d7de);
+    border-radius: 6px;
+    background: var(--sidebar-color, #f1f5f9);
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+    cursor: pointer;
+  }
+
+  .download-btn:hover {
+    background: var(--base-button-background-color, #e8ecf0);
+    border-color: var(--link-color, #0969da);
+    color: var(--link-color, #0969da);
+    text-decoration: none;
+  }
+
+  .download-icon {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+  }
+</style>

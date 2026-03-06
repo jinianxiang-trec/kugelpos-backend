@@ -1,0 +1,44 @@
+name: Build and Publish Docs ZIP
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+  workflow_dispatch:
+
+jobs:
+  publish-docs-zip:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # required to create/update releases
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create documentation ZIP
+        run: |
+          cd docs
+          zip -r ../documentation.zip . \
+            --exclude "*.git*" \
+            --exclude ".bundle/*" \
+            --exclude "Gemfile.lock" \
+            --exclude "*.log" \
+            --exclude ".DS_Store"
+
+      - name: Upload ZIP to GitHub Releases (docs-latest)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: docs-latest
+          name: "Documentation (latest)"
+          body: |
+            📦 Auto-generated documentation bundle.
+
+            This release is automatically updated on every push to `main` that modifies the `docs/` directory.
+
+            **Download:** `documentation.zip` contains the full documentation source.
+          files: documentation.zip
+          prerelease: false
+          make_latest: true
