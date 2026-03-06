@@ -18,15 +18,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create documentation ZIP
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+          working-directory: docs
+
+      - name: Build Jekyll site
         run: |
           cd docs
-          zip -r ../documentation.zip . \
-            --exclude "*.git*" \
-            --exclude ".bundle/*" \
-            --exclude "Gemfile.lock" \
-            --exclude "*.log" \
-            --exclude ".DS_Store"
+          bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Create documentation ZIP from built HTML site
+        run: |
+          cd docs/_site
+          zip -r ../../documentation.zip .
 
       - name: Upload ZIP to GitHub Releases (docs-latest)
         uses: softprops/action-gh-release@v2
@@ -34,11 +43,12 @@ jobs:
           tag_name: docs-latest
           name: "Documentation (latest)"
           body: |
-            📦 Auto-generated documentation bundle.
+            📦 Auto-generated documentation bundle (static HTML).
 
             This release is automatically updated on every push to `main` that modifies the `docs/` directory.
 
-            **Download:** `documentation.zip` contains the full documentation source.
+            **Download:** `documentation.zip` contains the full rendered HTML site.
+            Unzip and open `index.html` in your browser to browse offline.
           files: documentation.zip
           prerelease: false
           make_latest: true
