@@ -18,24 +18,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build Jekyll site
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./docs
-          destination: ./docs/_site
+      - name: Install Python markdown library
+        run: pip install markdown pygments --quiet
 
-      - name: Verify build output
+      - name: Convert Markdown to HTML
         run: |
           set -euo pipefail
-          echo "--- _site contents ---"
-          ls docs/_site/
-          echo "--- HTML file count ---"
-          find docs/_site -name "*.html" | wc -l
+          python3 .github/scripts/md_to_html.py docs/ docs/_html/
+          echo "--- Generated HTML files ---"
+          find docs/_html -name "*.html" | wc -l
 
-      - name: Create documentation ZIP from built HTML site
+      - name: Create documentation ZIP from HTML site
         run: |
           set -euo pipefail
-          cd docs/_site
+          cd docs/_html
           zip -r ../../documentation.zip .
           echo "ZIP size: $(du -sh ../../documentation.zip)"
 
@@ -45,12 +41,11 @@ jobs:
           tag_name: docs-latest
           name: "Documentation (latest)"
           body: |
-            📦 Auto-generated documentation bundle (static HTML).
+            📦 Auto-generated documentation bundle (standalone HTML).
 
             This release is automatically updated on every push to `main` that modifies the `docs/` directory.
 
-            **Download:** `documentation.zip` contains the full rendered HTML site.
-            Unzip and open `index.html` in your browser to browse offline.
+            **Download:** `documentation.zip` — unzip and open `index.html` in your browser to browse offline.
           files: documentation.zip
           prerelease: false
           make_latest: true
